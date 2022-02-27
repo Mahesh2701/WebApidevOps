@@ -1,0 +1,8 @@
+version: '3.1'
+service:
+  webapp:
+    build: .
+    container_name: dockerwebapi
+    restrat: unless-stopped
+    port:
+     - "5001:5001"
